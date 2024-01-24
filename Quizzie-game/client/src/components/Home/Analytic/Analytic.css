@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:wght@600&display=swap");
+
+.style-0 {
+  cursor: auto;
+  background: rgb(242, 242, 242) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.style-1 {
+  display: flex;
+  height: 729.6px;
+}
+
+.style-2 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  height: 697.6px;
+  justify-content: space-between;
+  min-width: 100px;
+  padding: 16px 8px;
+  width: 15vw;
+}
+
+.style-3 {
+  text-decoration: none;
+}
+
+.style-4 {
+  color: rgb(71, 68, 68);
+  cursor: pointer;
+  font-family: Jomhuria, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  text-align: center;
+}
+
+.style-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+  width: -webkit-fill-available;
+}
+
+.style-6 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 12px;
+}
+
+.style-7 {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 14px 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 12px;
+}
+
+.style-8 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 12px;
+}
+
+.style-9 {
+  border-right: 0px none rgb(0, 0, 0);
+  border-bottom: 0px none rgb(0, 0, 0);
+  border-left: 0px none rgb(0, 0, 0);
+  border-image: none;
+  border-top: 0.8px solid rgb(204, 204, 204);
+  margin: auto 0px 10px;
+}
+
+.style-10 {
+  background-color: rgb(255, 255, 255);
+  border: 0px none rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.style-11 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.style-12 {
+  text-align: center;
+}
+
+.style-13 {
+  color: rgb(80, 118, 255);
+  margin: 32px;
+}
+
+.style-14 {
+  border-collapse: collapse;
+}
+
+.style-15 {
+  background-color: rgb(80, 118, 255);
+  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+.style-16 {
+  padding: 8px;
+}
+
+.style-17 {
+  padding: 8px;
+}
+
+.style-18 {
+  padding: 8px;
+}
+
+.style-19 {
+  padding: 8px;
+}
+
+.style-20 {
+  padding: 8px;
+}
+
+.style-21 {
+  padding: 8px;
+}
+
+.style-22 {
+  border-radius: 16px;
+}
+
+.style-23 {
+  padding: 8px;
+}
+
+.style-24 {
+  padding: 8px;
+}
+
+.style-25 {
+  padding: 8px;
+}
+
+.style-26 {
+  padding: 8px;
+}
+
+.style-27 {
+  padding: 8px;
+}
+
+.style-28 {
+  cursor: pointer;
+}
+
+.style-29 {
+  cursor: pointer;
+}
+
+.style-30 {
+  cursor: pointer;
+}
+
+.style-31 {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration: underline solid rgb(0, 0, 0);
+  padding: 8px;
+}

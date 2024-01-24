@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:wght@600&display=swap");
+
+.style-0 {
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 729.6px;
+  justify-content: center;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+}
+
+.style-1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 218.875px;
+  padding: 40px;
+  width: 30vw;
+}
+
+.style-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 218.875px;
+  justify-content: center;
+}
+
+.style-3 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px 0px;
+  font-size: 16px;
+  padding: 16px;
+  width: -webkit-fill-available;
+}
+
+.style-4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-5 {
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  margin-top: 24px;
+  width: -webkit-fill-available;
+}
+
+.style-6 {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px 0px;
+  cursor: pointer;
+  flex: 1 1 0%;
+  padding: 8px;
+  transition-duration: 0.4s;
+}
+
+.style-7 {
+  background: rgb(96, 184, 75) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex: 1 1 0%;
+  padding: 8px;
+  transition-duration: 0.4s;
+}

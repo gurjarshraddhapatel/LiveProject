@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background: #fafafa;
+  padding: 52px;
+  text-align: center;
+}
+
+.mainContainer {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px 0px;
+  height: 703px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  width: 70vw;
+}
+
+.title {
+  color: rgb(71, 68, 68);
+  font-family: Jomhuria, sans-serif;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+.formStructure {
+  display: inline-flex;
+  gap: 48px;
+  margin: 1rem auto auto;
+}
+
+.container {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 64px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container2 {
+  box-shadow: rgba(0, 25, 255, 0.24) 0px 0px 50px 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 64px;
+  font-family: "Poppins", sans-serif;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  width: 32rem;
+}
+
+.emailInput {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
+}
+
+.emailFont {
+  margin-right: 32px;
+}
+
+.email {
+  background: rgb(244, 244, 244) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 6.8px 6.8px 0px 0px;
+  padding: 7px;
+  width: 20rem;
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Poppins", sans-serif;
+}
+
+.passwordText {
+  margin-right: 32px;
+}
+
+.passwordBtn {
+  background: rgb(244, 244, 244) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(0, 0, 0);
+  border-radius: 6.8px 6.8px 0px 0px;
+  padding: 7px;
+  width: 20rem;
+}
+
+.loginBtn {
+  background: rgb(169, 188, 255) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 16px;
+  margin: 1rem auto auto;
+  padding: 8px 112px;
+  transition-duration: 0.4s;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+}

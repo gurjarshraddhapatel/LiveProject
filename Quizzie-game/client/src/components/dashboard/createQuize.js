@@ -4,7 +4,7 @@ const createQuize = () => {
   return (
     <div>
       <h1>
-        Create Quizze
+        Create Quizze game updated via commit
       </h1>
     </div>
   )

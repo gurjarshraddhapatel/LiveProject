@@ -8,6 +8,7 @@ const connectDb = async () => {
   try {
     await mongoose.connect(
       "mongodb+srv://sankalp:lopa9990@cluster0.clkjatq.mongodb.net/Thapar?retryWrites=true&w=majority"
+      // "mongodb+srv://sp4600788:sp4600788@quiz.qjc7ati.mongodb.net/quiz?retryWrites=true&w=majority"
     );
     console.log("Database Connected");
   } catch (error) {

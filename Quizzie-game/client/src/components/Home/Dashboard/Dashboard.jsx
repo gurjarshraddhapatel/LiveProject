@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Dashboard.css';
-
+// import { Link } from 'react-router-dom';
+import CreateQuizModal from './CreateQuizModal'
 const Dashboard = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  
   return (
     <div>
-                                            <div className="style-1">
+    <div className="style-1">
   <div className="left-box">
     <a href="/dashboard" className="style-3">
       <div className="style-4">QUIZZIE</div>
@@ -16,14 +27,17 @@ const Dashboard = () => {
       <button className="style-7" fdprocessedid="mlps6c">
         Analytics
       </button>
-      <button className="style-8" fdprocessedid="lm9ozff">
-        Create Quiz
+      <button className="style-8" onClick={openModal}>
+          Create Quiz
       </button>
+     
     </div>
     <hr className="style-9" />
     <button className="style-10" fdprocessedid="nhymwy">
       LOGOUT
     </button>
+
+    
   </div>
  
   <div className="style-11">
@@ -47,10 +61,15 @@ const Dashboard = () => {
             first Quiz
           </p>
         </div>
+        <div>
+           {/* close modal */}
+    {isModalOpen && <CreateQuizModal onClose={closeModal} />}
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 </div>
 
   )

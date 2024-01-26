@@ -3,7 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from "./Dashboard.module.css";
-// Correct the import path
 // import TrendingCard from './components/Home/Dashboard/TrendingCard/TrendingCard';
 // import DeleteIcon from "../../assets/images/delete-icon.svg";
 // import EditIcon from "../../assets/images/edit-icon.svg";

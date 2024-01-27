@@ -3,7 +3,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from "./Dashboard.module.css";
-// import TrendingCard from './components/Home/Dashboard/TrendingCard/TrendingCard';
+import TrendingCard from './components/Home/Dashboard/TrendingCard';
+
 // import DeleteIcon from "../../assets/images/delete-icon.svg";
 // import EditIcon from "../../assets/images/edit-icon.svg";
 // import ShareIcon from "../../assets/images/share-icon.svg";
@@ -493,8 +494,8 @@ const Dashboard = () => {
                   >
                     {trendingQuizzes.length > 0 ? (
                       trendingQuizzes.map((quiz) => (
-                        // <TrendingCard
-                        <div
+                        <TrendingCard
+                        // <div
                           key={quiz._id}
                           quizName={quiz.quizName}
                           impressions={Math.round(quiz.impressions/2)}

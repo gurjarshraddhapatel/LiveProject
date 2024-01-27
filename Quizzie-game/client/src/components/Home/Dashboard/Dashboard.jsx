@@ -3,8 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styles from "./Dashboard.module.css";
+// import { TrendingCard } from './TrendingCard';
 // import TrendingCard from './components/Home/Dashboard/TrendingCard';
-
+// import FemalePage from './FemalePage';
 // import DeleteIcon from "../../assets/images/delete-icon.svg";
 // import EditIcon from "../../assets/images/edit-icon.svg";
 // import ShareIcon from "../../assets/images/share-icon.svg";
@@ -414,6 +415,26 @@ const Dashboard = () => {
     }
   }, [quizData, trendingQuizzes]);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <>
       <div className={styles.mainContainer}>
@@ -422,11 +443,8 @@ const Dashboard = () => {
             <div className={styles.logo}>QUIZZIE</div>
           </Link>
           <div className={styles.modesContainer}>
-            <button
-              className={`${styles.modeBtn} ${
-                activeScreen === "dashboard" ? styles.activeScreen : ""
-              }`}
-              onClick={() => setActiveScreen("dashboard")}
+            <button className={`${styles.modeBtn} ${activeScreen === "dashboard" ? styles.activeScreen : ""}`}
+            onClick={() => setActiveScreen('dashboard')}
             >
               Dashboard
             </button>
@@ -455,8 +473,13 @@ const Dashboard = () => {
             {isLoggedIn ? "LOGOUT" : "LOG IN"}
           </button>
         </div>
+
+
+
+{/* =================Dashbord Content ================================*/}
+{/* <h1>Shraddha pate!</h1> */}
         <div className={styles.subContainer}>
-          {activeScreen === "dashboard" &&
+          {activeScreen !== "dashboard" &&
             (dashboardLoading ? (
               <div className={styles.loaderContainer}>
                 <FadeLoader color="#474444" />
@@ -515,6 +538,9 @@ const Dashboard = () => {
                 </div>
               </div>
             ))}
+
+
+
 
           {activeScreen === "analytics" &&
             (isAnalyticsLoading ? (

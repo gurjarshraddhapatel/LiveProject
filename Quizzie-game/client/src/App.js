@@ -6,6 +6,7 @@ import Dashboard from "./components/Home/Dashboard/Dashboard";
 // import QuizCompletion from './components/QizCompletion/QuizCompletion';
 import QuizCompletion from './components/Home/QuizCompletion/QuizCompletion';
 import Question from './components/Home/questions/Questions';
+import QuizAnalysis from "./components/Home/quizAnalysis/QuizAnalysis";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/home" element={<Dashboard />} />
           <Route path="/quiz" exact component={QuizCompletion} />
           <Route path="/question" exact component={Question} />
+          <Route path="/quizanalysis/:quizId" exact component={QuizAnalysis} />
 
         </Routes>
       </BrowserRouter>

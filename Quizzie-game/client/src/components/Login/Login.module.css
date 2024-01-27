@@ -7,8 +7,8 @@
 }
 
 .card {
-  background: #fafafa;
-  padding: 52px;
+  background: rgb(242, 242, 242);
+  padding: 46px;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@
     border-box;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px 0px;
-  height: 703px;
+  height: 695px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px;
@@ -27,7 +27,7 @@
 .title {
   color: rgb(71, 68, 68);
   font-family: Jomhuria, sans-serif;
-  font-size: 85px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 550;
   line-height: normal;
@@ -40,7 +40,7 @@
   margin: 1rem auto auto;
 }
 
-.container {
+.logIn {
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
     border-box;
   border: 0px none rgb(0, 0, 0);
@@ -51,7 +51,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container2 {
+.signUp {
   box-shadow: rgba(0, 25, 255, 0.24) 0px 0px 50px 0px;
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -71,6 +71,22 @@
   margin-right: auto;
   margin-top: 64px;
   width: 32rem;
+}
+
+.loginText {
+  text-decoration: none;
+}
+
+.signupText {
+  text-decoration: none;
+}
+
+.logIn:hover {
+  background-color: rgb(169, 188, 255);
+}
+
+.signUp:hover {
+  background-color: rgb(169, 188, 255);
 }
 
 .emailInput {

@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:wght@600&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   background: rgb(242, 242, 242) none repeat scroll 0% 0% / auto padding-box
     border-box;
-  padding: 48px;
+  padding: 46px;
   text-align: center;
 }
 
@@ -36,7 +41,7 @@
   margin: 1rem auto auto;
 }
 
-.signupBtn {
+.loginBtn {
   box-shadow: rgba(0, 25, 255, 0.24) 0px 0px 50px 0px;
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
     border-box;
@@ -46,10 +51,21 @@
   font-size: 16px;
   padding: 8px 64px;
   font-family: "Poppins", sans-serif;
+  text-decoration: none !important;
+}
+.loginBtn:hover {
+  background-color: rgb(169, 188, 255);
+}
+
+.loginText {
   text-decoration: none;
 }
 
-.loginBtn {
+.signupText {
+  text-decoration: none;
+}
+
+.signupBtn {
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
     border-box;
   border: 0px none rgb(0, 0, 0);
@@ -58,7 +74,14 @@
   font-size: 16px;
   padding: 8px 64px;
   font-family: "Poppins", sans-serif;
-  text-decoration: yellowgreen;
+}
+
+.signupBtn {
+  text-decoration: none;
+}
+
+.signupBtn:hover {
+  background-color: rgb(169, 188, 255);
 }
 
 .form {
@@ -160,4 +183,8 @@
   transition-duration: 0.4s;
   width: fit-content;
   font-family: "Poppins", sans-serif;
+}
+
+.submitBtn:hover {
+  background-color: rgb(36, 74, 209);
 }

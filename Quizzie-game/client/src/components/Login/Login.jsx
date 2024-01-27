@@ -7,6 +7,9 @@ const Login = () => {
 
   const URL = "http://localhost:5000/api/login"
   const navigate = useNavigate();
+  
+ 
+
 
   const[user, setUser] = useState({
      email:"",
@@ -21,7 +24,7 @@ const Login = () => {
           ...user,
           [name]:value,
 
-        })
+        });
   }
       
   const handleSubmit = async (e)=>{
@@ -32,14 +35,26 @@ const Login = () => {
               headers:{
                 "Content-Type":"application/json",
               },
-              body:JSON.stringify(user)
+              body: JSON.stringify(user)
           })
-
+                    
+          const res_data = await response.json()
+          console.log("res from server", res_data)
             console.log(response)
+
+
           if(response.ok){
+            const res_data = await response.json()
+             console.log("res from server", res_data)
+              localStorage.setItem('token', res_data.token)
+        
+            
             setUser({email:"", password:""})
+            navigate("/home")
+          }else{
+            alert()
           }
-           navigate("/home")
+          
       } catch (error) {
         alert("Invalid Credentials")
         console.log("Invalid Credentials")
@@ -53,11 +68,11 @@ const Login = () => {
   <div className={styles.mainContainer}>
     <div className={styles.title}>QUIZZIE</div>
     <div className={styles.formStructure}>
-      <button className={styles.container}>
-      <NavLink to='/'>Log In</NavLink>
+      <button className={styles.logIn}>
+      <NavLink to='/' className={styles.loginText}>Log In</NavLink>
       </button>
-      <button className={styles.container2}>
-      <NavLink to='/signup'>Sign Up</NavLink>
+      <button className={styles.signUp}>
+      <NavLink to='/signup' className={styles.signupText}>Sign Up</NavLink>
       </button>
     </div>
     <div>

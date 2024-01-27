@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import styles from './Signup.module.css'
+
+
+
 const Signup = () => {
 
     const [user, setUser] = useState({
@@ -11,6 +14,8 @@ const Signup = () => {
     }) 
    
     const navigate = useNavigate();
+    
+  
 
         const handleInput = (e)=>{
                let name = e.target.name;
@@ -32,14 +37,24 @@ const Signup = () => {
                 },
                 body:JSON.stringify(user),
               })
+
+    
+          
+
+
               if(response.ok){
-                setUser({
+               const res_data = await response.json()
+             console.log("res from server", res_data)
+              localStorage.setItem('token', res_data.token)
+             setUser({
                   name:"",
                   email:"",
                   password:"",
                   confirmPassword:"",
                  } )
                  navigate('/')
+              } else{
+          
               }
                console.log(response)
              } catch (error) {
@@ -54,11 +69,11 @@ const Signup = () => {
   <div className={styles.mainContainer}>
     <div className={styles.title}>QUIZZIE</div>
     <div className={styles.components}>
-      <button className={styles.signupBtn}>
-        <NavLink to='/'>Login</NavLink>
-      </button>
       <button className={styles.loginBtn}>
-        <NavLink to='/signup'>Sign Up</NavLink>
+        <NavLink to='/' className={styles.loginText}>Login</NavLink>
+      </button>
+      <button className={styles.signupBtn}>
+        <NavLink to='/signup' className={styles.signupText}>Sign Up</NavLink>
       </button>
     </div>
     <div >

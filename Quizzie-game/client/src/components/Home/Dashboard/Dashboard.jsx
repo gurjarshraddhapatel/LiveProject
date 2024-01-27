@@ -437,6 +437,8 @@ const Dashboard = () => {
   
   return (
     <>
+  
+
       <div className={styles.mainContainer}>
         <div className={styles.sideBar}>
           <Link to="/dashboard" style={{ textDecoration: "none" }}>
@@ -479,7 +481,7 @@ const Dashboard = () => {
 {/* =================Dashbord Content ================================*/}
 {/* <h1>Shraddha pate!</h1> */}
         <div className={styles.subContainer}>
-          {activeScreen !== "dashboard" &&
+          {activeScreen === "dashboard" &&
             (dashboardLoading ? (
               <div className={styles.loaderContainer}>
                 <FadeLoader color="#474444" />
@@ -518,7 +520,18 @@ const Dashboard = () => {
                     {trendingQuizzes.length > 0 ? (
                       trendingQuizzes.map((quiz) => (
                         // <TrendingCard
-                        <div
+                      //   <div>
+                      // <div className={styles.trendingQuizCard}>
+                      //   <div style={{ display: "flex", alignItems: "center" }}>
+                      //     <div className={styles.quizName}>{quizName}</div>
+                      //     <div className={styles.impressions}>{impressions}</div>
+                      //     <img src={ImpressionsIcon} alt="" />
+                      //   </div>
+                      //   <div className={styles.creationDate}>Created on : {creationDate}</div>
+                      // </div>
+
+
+                       <div
                           key={quiz._id}
                           quizName={quiz.quizName}
                           impressions={Math.round(quiz.impressions/2)}
@@ -527,6 +540,7 @@ const Dashboard = () => {
                             { day: "2-digit", month: "short", year: "numeric" }
                           )}
                         />
+                        // </div>
                       ))
                     ) : (
                       <p className={styles.firstQuizPara}>

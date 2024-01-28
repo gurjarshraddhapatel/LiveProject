@@ -38,11 +38,7 @@ const Login = () => {
               body: JSON.stringify(user)
           })
                     
-          const res_data = await response.json()
-          console.log("res from server", res_data)
-            console.log(response)
-
-
+        
           if(response.ok){
             const res_data = await response.json()
              console.log("res from server", res_data)

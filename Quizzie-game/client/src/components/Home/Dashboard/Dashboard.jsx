@@ -212,6 +212,9 @@ const Dashboard = () => {
       )
       .then((response) => {
         setNewQuizId(response.data.id);
+        // Generate the link with the quiz ID and other relevant data
+        // const quizLink = `${process.env.REACT_APP_URL}/quiz/${response.data.id}`;
+        // setGeneratedQuizLink(quizLink);
       })
       .catch((error) => {
         console.error("An error occurred while saving the quiz:", error);
@@ -278,6 +281,10 @@ const Dashboard = () => {
 
   //for quiz published modal
   const [showQuizPublishedModal, setShowQuizPublishedModal] = useState(false);
+
+  
+// Add a state variable to store the generated quiz link
+const [generatedQuizLink, setGeneratedQuizLink] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -365,6 +372,7 @@ const Dashboard = () => {
           console.error("Failed to copy quiz link: ", err);
         });
     }
+
     toast.success("Link copied to Clipboard", {
       position: "top-right",
       autoClose: 1400,
@@ -433,11 +441,10 @@ const Dashboard = () => {
 
 
 
-
   
   return (
     <>
-  
+   
 
       <div className={styles.mainContainer}>
         <div className={styles.sideBar}>
@@ -1006,10 +1013,14 @@ const Dashboard = () => {
                   Published!
                 </p>
                 <div className={styles.quizLink}>
+                    
                   {newQuizId
                     ? `${process.env.REACT_APP_URL}/quiz/${newQuizId}`
                     : "Link loading... "}
+               
                 </div>
+                 
+
 
                 <div className={styles.buttonContainer}>
                   <button

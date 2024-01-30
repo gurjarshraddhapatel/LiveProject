@@ -1,4 +1,5 @@
 const User = require("../models/user-models");
+const Quiz = require("../models/quizModel");
 const bcrypt = require("bcryptjs");
 
 const login = async (req, res) => {
@@ -67,4 +68,24 @@ const home = () => {
   }
 };
 
-module.exports = { login, register, home };
+
+// Assuming you're using the 'fetch' API or 'axios' for making HTTP requests
+
+const saveQuizToDatabase = async (formData) => {
+  try {
+    const response = await fetch('http://localhost:3000/saveQuiz', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+    console.log(data.message);
+  } catch (error) {
+    console.error('Error saving quiz:', error);
+  }
+};
+
+module.exports = { login, register, home, saveQuizToDatabase };

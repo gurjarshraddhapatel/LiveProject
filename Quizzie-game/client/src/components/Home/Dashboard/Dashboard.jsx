@@ -716,16 +716,12 @@ const [generatedQuizLink, setGeneratedQuizLink] = useState(null);
             </div>
           </div>
         )}
-
+ {/* ============================ Q&A form Start=============================== */}
         {showQuestionModal && (
-          <div
-            className={styles.questionModalOverlay}
-            // onClick={handleCreateQuiz}
+          <div className={styles.questionModalOverlay}// onClick={handleCreateQuiz}
           >
-            <div
-              className={styles.questionModal}
-              onClick={(e) => e.stopPropagation()}
-            >
+            <div className={styles.questionModal} onClick={(e) => e.stopPropagation()}>
+            
               <div className={styles.modalContent}>
                 <div
                   style={{
@@ -930,7 +926,7 @@ const [generatedQuizLink, setGeneratedQuizLink] = useState(null);
                       </div>
                     ))}
                   </div>
-
+                  {/* ============================ Q&A form end=============================== */}
                   {quizType !== "Poll Type" && (
                     <div
                       className={styles.timerType}

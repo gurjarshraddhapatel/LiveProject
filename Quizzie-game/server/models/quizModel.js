@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const quizSchema = new mongoose.Schema({
   quizName: String,
@@ -17,6 +17,6 @@ const quizSchema = new mongoose.Schema({
   ],
 });
 
-const Quiz = mongoose.model('Quiz', quizSchema);
+const Quiz = mongoose.model("ShraddhaQuiz", quizSchema);
 
 module.exports = Quiz;

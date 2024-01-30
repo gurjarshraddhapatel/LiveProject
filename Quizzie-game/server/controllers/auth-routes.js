@@ -68,24 +68,55 @@ const home = () => {
   }
 };
 
-
 // Assuming you're using the 'fetch' API or 'axios' for making HTTP requests
 
-const saveQuizToDatabase = async (formData) => {
+const saveQuizToDatabase = async (req, res) => {
   try {
-    const response = await fetch('http://localhost:3000/saveQuiz', {
-      method: 'POST',
+    const formData = req.body;
+
+    // Remove circular references before stringifying
+    const sanitizedFormData = removeCircularReferences(formData);
+
+    const response = await fetch("http://localhost:5000/saveQuiz", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(sanitizedFormData),
     });
 
     const data = await response.json();
     console.log(data.message);
   } catch (error) {
-    console.error('Error saving quiz:', error);
+    console.error("Error saving quiz:", error);
   }
+};
+
+// Function to remove circular references
+const removeCircularReferences = (obj, seen = new WeakSet()) => {
+  if (typeof obj !== "object" || obj === null) {
+    return obj;
+  }
+
+  if (seen.has(obj)) {
+    return;
+  }
+
+  seen.add(obj);
+
+  if (Array.isArray(obj)) {
+    obj.forEach((item, index) => {
+      obj[index] = removeCircularReferences(item, seen);
+    });
+  } else {
+    for (const key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        obj[key] = removeCircularReferences(obj[key], seen);
+      }
+    }
+  }
+
+  return obj;
 };
 
 module.exports = { login, register, home, saveQuizToDatabase };
